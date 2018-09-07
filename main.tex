@@ -60,7 +60,40 @@ $T$ = \underline{27.4 days}\\
 \end{frame}
 
 \begin{frame}
-\item 1(e) If a terrestrial observer sees the same face of the Moon all the time, the Moon must be rotating about its own axis at the exact same rate as its orbital motion around the Earth.\\ Hence, rotational period of Moon = \underline{27.4 days}. 
+\item 1(e)
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.5]
+%\draw[help lines, color=gray!30, thick] (-4.9,-4.9) grid (4.9,4.9);
+\filldraw [fill=blue!40, very thick] (0,0) circle (0.5cm);
+\node (earth) at (0,-1) {Earth};
+
+\draw [very thick, dashed] (0,0) circle (3cm);
+\filldraw [fill=yellow!40, very thick] (3,0) circle (0.3cm);
+\draw [very thick, red] (3,0) -- (2.7,0);
+\node[anchor = south west] (moon1) at (3,0) {\hspace{4pt} day 0};
+\node[anchor = north west] (moon5) at (3,0) {\hspace{4pt} day 28};
+
+\filldraw [fill=yellow!40, very thick] (0,3) circle (0.3cm);
+\draw [very thick, red] (0,3) -- (0,2.7);
+\node[anchor = south] (moon2) at (0,3.3) {day 7};
+
+\filldraw [fill=yellow!40, very thick] (-3,0) circle (0.3cm);
+\draw [very thick, red] (-3,0) -- (-2.7,0);
+\node[anchor = east] (moon3) at (-3.3,0) {day 14};
+
+\filldraw [fill=yellow!40, very thick] (0,-3) circle (0.3cm);
+\draw [very thick, red] (0,-3) -- (0,-2.7);
+\node[anchor = north] (moon4) at (0,-3.3) {day 21};
+
+\end{tikzpicture}
+\caption{Observer on Earth sees the same face of the Moon at all times}
+\label{fig:moon_orbit}
+\end{figure}
+
+
+If a terrestrial observer sees the same face of the Moon all the time, the Moon must be rotating about its own axis at the exact same rate as its orbital motion around the Earth.\\ Hence, rotational period of Moon = \underline{27.4 days}. 
 \end{frame}
 
 \begin{frame}
@@ -240,7 +273,7 @@ $ \phi_1 = \underline{-1.51 \times 10^9} $ \underline{J kg $^{-1}$} \\
 \[\phi_2 = -\frac{GM}{r_2}  \]
 \[\phi_2 = -\frac{6.67 \times 10^{-11} \times 1.99 \times 10^{30}}{35.1 \times 1.50 \times 10^{11}}  \]
 \vspace{10pt}
-$ \phi_2 = -\underline{-2.52 \times 10^7} $ \underline{J kg $^{-1}$ }\\
+$ \phi_2 = \underline{-2.52 \times 10^7} $ \underline{J kg $^{-1}$ }\\
 \end{frame}
 
 \begin{frame}
